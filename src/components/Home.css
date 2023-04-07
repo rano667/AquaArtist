@@ -1,0 +1,11 @@
+.home{
+    max-width: 1500px;
+    /* margin-left: auto;
+    margin-right: auto; */
+}
+.home__carosel{
+    z-index: -1;
+    margin-top: -100px;
+    margin-bottom: -100px;
+    mask-image: linear-gradient(to bottom, rgb(0, 0, 0, 1), rgb(0, 0, 0, 0));
+}
