@@ -11,7 +11,6 @@ const Home = () => {
       <div className="home__carosel">
         <Carosel />
       </div>
-
       <Category />
       <Product />
       <Footer />

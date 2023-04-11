@@ -14,6 +14,7 @@
 */
 const callouts = [
     {
+      id: 1,
       name: 'Premium Discus',
       description: 'Different Stains of Discus',
       imageSrc: 'https://cdn.pixabay.com/photo/2021/01/26/12/43/discus-5951340__340.jpg',
@@ -21,6 +22,7 @@ const callouts = [
       href: '#',
     },
     {
+      id: 2,
       name: 'Premium Aroana',
       description: 'All Types of Aroana',
       imageSrc: 'https://media.istockphoto.com/id/1306548074/photo/red-arowana-fish.jpg?b=1&s=170667a&w=0&k=20&c=weQYvByYHsWWeY8zyxiTbeMjLpphPdCOmVU_A3NWCfM=',
@@ -28,6 +30,7 @@ const callouts = [
       href: '#',
     },
     {
+      id: 3,
       name: 'Discus',
       description: 'Discus for all',
       imageSrc: 'https://cdn.pixabay.com/photo/2016/10/10/08/09/schooling-discus-fish-1727842__340.jpg',
@@ -45,7 +48,7 @@ const callouts = [
   
             <div className="mx-auto space-y-12 lg:grid lg:grid-cols-3 lg:gap-x-6 lg:space-y-0">
               {callouts.map((callout) => (
-                <div key={callout.name} className="group relative">
+                <div key={callout.id} className="group relative">
                   <div className="relative h-80 w-full overflow-hidden rounded-lg bg-white sm:aspect-h-1 sm:aspect-w-2 lg:aspect-h-1 lg:aspect-w-1 group-hover:opacity-75 sm:h-64">
                     <img
                       src={callout.imageSrc}

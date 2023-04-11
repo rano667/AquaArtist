@@ -4,8 +4,11 @@ import "./Header.css";
 import logo from "../image/logo.png";
 import SearchIcon from "@mui/icons-material/Search";
 import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
+import { useStateValue } from "../context/StateProvider";
 
 const Header = () => {
+const [{ basket }] = useStateValue();
+console.log(basket);
   return (
     <nav className="header">
       {/* logo on the left */}
@@ -39,7 +42,7 @@ const Header = () => {
             {/* shoping basket icon */}
             <ShoppingBasketIcon />
             {/* number of items in the basket */}
-            <span className="header__optionSecondLine header__basketCount">0</span>
+            <span className="header__optionSecondLine header__basketCount">{basket.length}</span>
           </div>
         </Link>
       </div>
